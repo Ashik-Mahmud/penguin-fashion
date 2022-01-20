@@ -1,0 +1,62 @@
+/*=============
+ stylesheets 
+ ============== */
+
+
+/* google fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700&display=swap');
+
+/* variables  */
+:root{
+    /* fonts  */
+    --bebas: 'Bebas Neue', cursive;
+    --roboto: 'Roboto', sans-serif;
+    /* colors  */
+    --common: #A4BC46;
+    --secondary-color: #FABE4C;
+    --text-color: #363958;
+}
+
+
+/*================
+ custom classes
+ ================= */
+.bg-hero{
+    background: #FFFBF0;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+.font-weight-500{
+    font-weight: 500;
+}
+
+/* fonts & fonts  */
+.font-bebas{
+    font-family: var(--bebas);
+}
+.font-roboto{
+    font-family: var(--roboto);
+}
+
+
+/* colors & backgrounds  */
+
+.text-common{
+    color: var(--common);
+}
+.bg-common{
+    background: var(--common);
+}
+.text-secondary{
+    color: var(--secondary-color);
+}
+.text-color{
+    color: var(--text-color);
+}
+
+
+
+/* utilities class & style */
+
+
