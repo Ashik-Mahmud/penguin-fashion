@@ -30,12 +30,18 @@
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a href="#header" class="font-weight-500 px-4 text-color nav-link">Home</a>
                         </li>
-                        <li class="nav-item"><a href="#products"
-                                class="font-weight-500 px-4 text-color nav-link">Products</a></li>
+                        <li class="nav-item dropdown">
+                            <a href="#products" data-bs-toggle="dropdown" class="font-weight-500 dropdown-toggle px-4 text-color nav-link">Products</a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="#women">Women Fashion</a></li>
+                                <li><a class="dropdown-item" href="#men">Men Fashion</a></li>
+                            </ul>
+                        </li>
                         <li class="nav-item"><a href="#about" class="font-weight-500 px-4 text-color nav-link">About
                                 Us</a></li>
-                        <li class="nav-item"><a href="#contact"
-                                class="font-weight-500 px-4 text-color nav-link">Contact</a></li>
+                        <li class="nav-item"><a data-bs-target="#modal-1" data-bs-toggle="modal" href="#contact"
+                                class="font-weight-500 px-4 text-color nav-link bg-common btn px-3  fs-6 text-white btn-lg ">Contact</a>
+                        </li>
                     </ul>
                 </menu>
             </div>
@@ -65,7 +71,7 @@
     <!-- header part design end  -->
 
     <!-- main part design  -->
-    <main id="products">
+    <main id="main">
 
         <!-- products section -->
         <section id="women" class="women py-5">
@@ -75,8 +81,8 @@
                     <div class="col-lg-4">
                         <div class="card border-0 shadow-card radius-max p-3">
                             <div class="card-image">
-                                <img src="./assets/images/jacket-1.png"  alt="female jaket"
-                                    class="img-fluid" width="225">
+                                <img src="./assets/images/jacket-1.png" alt="female jaket" class="img-fluid"
+                                    width="225">
                             </div>
                             <div class="card-body">
                                 <h3 class="card-title h4 text-color">Yellow coat Jaket</h3>
@@ -99,8 +105,8 @@
                     <div class="col-lg-4">
                         <div class="card border-0 shadow-card radius-max p-3">
                             <div class="card-image">
-                                <img src="./assets/images/jacket-3.png"  alt="female jaket"
-                                    class="img-fluid" width="225">
+                                <img src="./assets/images/jacket-3.png" alt="female jaket" class="img-fluid"
+                                    width="225">
                             </div>
                             <div class="card-body">
                                 <h3 class="card-title h4 text-color">Red Lether Jaket</h3>
@@ -123,8 +129,8 @@
                     <div class="col-lg-4">
                         <div class="card border-0 shadow-card radius-max p-3">
                             <div class="card-image">
-                                <img src="./assets/images/jacket-2.png"  alt="female jaket"
-                                    class="img-fluid" width="225">
+                                <img src="./assets/images/jacket-2.png" alt="female jaket" class="img-fluid"
+                                    width="225">
                             </div>
                             <div class="card-body">
                                 <h3 class="card-title h4 text-color">Ladies Jaket</h3>
@@ -144,7 +150,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
         </section>
@@ -156,8 +162,8 @@
                     <div class="col-lg-4">
                         <div class="card border-0 shadow-card radius-max p-3">
                             <div class="card-image">
-                                <img src="./assets/images/jacket-4.png"  alt="female jaket"
-                                    class="img-fluid" width="225">
+                                <img src="./assets/images/jacket-4.png" alt="female jaket" class="img-fluid"
+                                    width="225">
                             </div>
                             <div class="card-body">
                                 <h3 class="card-title h4 text-color">Snowboard Jaket Mens</h3>
@@ -180,8 +186,8 @@
                     <div class="col-lg-4">
                         <div class="card border-0 shadow-card radius-max p-3">
                             <div class="card-image">
-                                <img src="./assets/images/jacket-5.png"  alt="female jaket"
-                                    class="img-fluid" width="225">
+                                <img src="./assets/images/jacket-5.png" alt="female jaket" class="img-fluid"
+                                    width="225">
                             </div>
                             <div class="card-body">
                                 <h3 class="card-title h4 text-color">Men Lether Jaket</h3>
@@ -204,8 +210,8 @@
                     <div class="col-lg-4">
                         <div class="card border-0 shadow-card radius-max p-3">
                             <div class="card-image">
-                                <img src="./assets/images/jacket-6.png"  alt="female jaket"
-                                    class="img-fluid" width="225">
+                                <img src="./assets/images/jacket-6.png" alt="female jaket" class="img-fluid"
+                                    width="225">
                             </div>
                             <div class="card-body">
                                 <h3 class="card-title h4 text-color">Men Casual Jaket</h3>
@@ -225,7 +231,50 @@
                             </div>
                         </div>
                     </div>
-                    
+
+                </div>
+            </div>
+        </section>
+
+        <!-- about sections  -->
+        <section id="about" class="py-5">
+            <div class="about-container container py-5">
+                <div class="row gy-5 justify-content-between align-items-center">
+                    <div class="col-lg-5">
+                        <div class="card flex-row align-items-center shadow-card border-0 mb-3 p-2">
+                            <div class="card-header bg-white border-0">
+                                <img src="./assets/images/house.png" width="80" alt="houses" class="img-fluid">
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title font-roboto fs-4 text-color">Find the Perfect fit</h3>
+                                <p class="card-text text-muted small">Everybody is different, which is why we offer
+                                    styles for every body.</p>
+                            </div>
+                        </div>
+                        <div class="card flex-row align-items-center shadow-card border-0 mb-3 p-2">
+                            <div class="card-header bg-white border-0">
+                                <img src="./assets/images/box.png" width="80" alt="houses" class="img-fluid">
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title font-roboto fs-4 text-color">Free Exchanges</h3>
+                                <p class="card-text text-muted small">One of the many reasons you can shop with peace of
+                                    mind.</p>
+                            </div>
+                        </div>
+                        <div class="card flex-row align-items-center shadow-card border-0 p-2">
+                            <div class="card-header bg-white border-0">
+                                <img src="./assets/images/question.png" width="80" alt="houses" class="img-fluid">
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title font-roboto fs-4 text-color">Contact Our Seller</h3>
+                                <p class="card-text text-muted small">They are here to help you. That's quite literally
+                                    what we pay them for.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="./assets/images/shopping.png" alt="shopping" class="img-fluid">
+                    </div>
                 </div>
             </div>
         </section>
@@ -234,8 +283,48 @@
     <!-- main part design end  -->
 
     <!-- footer part design  -->
-    <footer id="footer"></footer>
+    <footer id="footer" class="py-3 text-center">
+        <div class="footer-container container">
+            <p class="lead text-muted fs-6">Copyright &copy; By 2022 and Alright Reserved <a href="#">Ashik Mahmud</a>
+            </p>
+        </div>
+    </footer>
     <!-- footer part design end  -->
+
+    <!-- code for modal  -->
+    <div class="modal fade" id="modal-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form action="#">
+                    <div class="modal-header">
+                        <h3>Contact Us for Product</h3>
+                        <button data-bs-dismiss="modal" class="btn-close float-end"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-2">
+                            <label for="name" class="form-label">Your name</label>
+                            <input type="text" placeholder="Name" id="name" class="form-control">
+                        </div>
+                        <div class="mb-2">
+                            <label for="email" class="form-label">Your Email</label>
+                            <input type="email" placeholder="Email" id="email" class="form-control">
+                        </div>
+                        <div class="mb-2">
+                            <label for="feedback" class="form-label">Query</label>
+                            <textarea name="feedback" id="feedback" placeholder="What do you want?" class="form-control"></textarea>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit"
+                            class="font-weight-500 px-4 text-color bg-common btn px-3  fs-6 text-white btn-lg ">Send
+                            Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
 
 
 
